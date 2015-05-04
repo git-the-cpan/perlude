@@ -4,7 +4,7 @@
       "Marc Chantreux <khatar@phear.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.012, CPAN::Meta::Converter version 2.132830",
+   "generated_by" : "Dist::Zilla version 5.035, CPAN::Meta::Converter version 2.142060",
    "license" : [
       "perl_5"
    ],
@@ -16,28 +16,16 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.30"
+            "ExtUtils::MakeMaker" : "0"
          }
       },
       "runtime" : {
          "requires" : {
-            "Carp" : "0",
-            "Exporter" : "0",
-            "Modern::Perl" : "0",
-            "perl" : "v5.10.0",
-            "strict" : "0",
-            "warnings" : "0"
-         }
-      },
-      "test" : {
-         "requires" : {
-            "Test::More" : "0",
-            "YAML" : "0",
-            "autodie" : "0"
+            "Carp" : "0"
          }
       }
    },
-   "release_status" : "stable",
+   "release_status" : "testing",
    "resources" : {
       "homepage" : "https://github.com/eiro/p5-perlude",
       "repository" : {
@@ -46,6 +34,6 @@
          "web" : "https://github.com/eiro/p5-perlude"
       }
    },
-   "version" : "0.58"
+   "version" : "0.60"
 }
 
