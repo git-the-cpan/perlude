@@ -1,25 +1,21 @@
 #! /usr/bin/perl
 use strict;
 use warnings;
-use Test::More 'no_plan';
+use Test::More;
 use Perlude::Lazy;
-use autodie;
 
 my @seed = qw/ toto tata tutu /;
-my $file = 't/perlude-test-lines-data';
+my $content = 'toto
+tata
+tutu
+';
 
-open F,'>',$file;
-say F $_ for @seed;
-close F;
+open my $file, '<', \$content;
 
 is_deeply
 ( [fold lines $file]
 , [map { "$_\n" } @seed]
 , "raw lines" );
 
-is_deeply
-( [fold lines chomp => $file]
-, \@seed
-, "chomped lines" );
+done_testing;
 
-unlink $file;
